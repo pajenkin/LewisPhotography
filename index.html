@@ -13,62 +13,32 @@
   <link rel="stylesheet" href="css/custom.css">
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/index.js"></script>
 </head>
 <body>
-  <div class="container" >
-    <div id="main-container">
-      <nav class="navbar navbar-default">
-        <ul class="nav navbar-nav navbar-left">
-          <li><a class="navbar-brand" href="Index.html">Thearesa Photography</a></li>
+  <div class="all-page-wrapper">
+    <div class="background-image-index"></div> 
+    <div class="main-container">
+      <div class="nav-wrapper navbar navbar-default" role="navigation">
+        <ul class="nav-item-wrapper nav navbar-nav">
+          <li class="left-nav-wrapper navbar-left"> 
+            <ul class="group-nav-wrapper nav navbar-nav">
+              <li class=" custom-nav-side"><a class="custom-nav-side-content" href="Gallery.html">Weddings</a></li>
+              <li class=" custom-nav-side"><a class="custom-nav-side-content" href="Portraits.html">Portraits</a></li>
+              <li class=" custom-nav-side"><a class="custom-nav-side-content" href="Landscape.html">Landscape</a></li>
+            </ul>
+          </li>
+          <li class="custom-navbar-brand-wrapper navbar-center"><a class="custom-navbar-brand" href="Index.html">Theresa Photography</a></li>
+          <li class="right-nav-wrapper navbar-right">
+            <ul  class="group-nav-wrapper nav navbar-nav">
+              <li class=" custom-nav-side"><a class="custom-nav-side-content" href="AboutMe.html">About</a></li>
+              <li class=" custom-nav-side"><a class="custom-nav-side-content" href="Contact.html">Contact</a></li>
+              <li class=" custom-nav-side"><a class="custom-nav-side-content" href="Login.html" id="login">Login</a></li>
+            </ul>
+          </li>
         </ul>
-        <ul class="nav navbar-nav pull-right">
-          <li><a href="Index.html">Home </a></li>
-          <li><a href="Gallery.html">Galleries</a></li>
-          <li><a href="AboutMe.html">About</a></li>
-          <li><a href="Login.html" id="login">Login</a></li>
-        </ul>
-      </nav>
+      </div>
       <div class="main-content-index">
-        <div class="carousel-wrapper">
-          <div id="homeCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#homeCarousel" data-slide-to="1"></li>
-              <li data-target="#homeCarousel" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <img class="img-responsive" src="img/DSC00229.jpg" alt="Moment">
-                <div class="carousel-caption">
-                  Moments Live Forever
-                </div>
-              </div>
-              <div class="item">
-                <img src="img/11.jpg" alt="Moment2">
-                <div class="carousel-caption">
-                  Elegant, Creative, Yours
-                </div>
-              </div>
-              <div class="item">
-                <img src="img/18.jpg" alt="Moment3">
-                <div class="carousel-caption">
-                  Remembered Through Generations
-                </div>
-              </div>
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#homeCarousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#homeCarousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   </div>

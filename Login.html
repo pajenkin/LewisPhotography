@@ -1,11 +1,44 @@
-<div class="col-sm-8 col-sm-offset-2">
-	<div class="input-group">
-		<label for="UserName">UserName</label>
-		<input id="UserName" ng-model="userName" class="form-control" placeholder="UserName">
-	</div>
-	<div class="input-group">
-		<label for="Password">Password</label>
-		<input id="Password" class="form-control" ng-model="password" placeholder="Password">
-	</div>
-	<input class="btn btn-default" value="Login" ng-click="loginAttempt(userName, password)" />
-</div>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Lewis Photography</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+  <div class="main-container">
+    <div class="nav-wrapper navbar navbar-default" role="navigation">
+      <ul class="nav-item-wrapper nav navbar-nav">
+        <li class="left-nav-wrapper navbar-left"> 
+          <ul class="group-nav-wrapper nav navbar-nav">
+            <li class=" custom-nav-side"><a class="custom-nav-side-content" href="Gallery.html">Weddings</a></li>
+            <li class=" custom-nav-side"><a class="custom-nav-side-content" href="Portraits.html">Portraits</a></li>
+            <li class=" custom-nav-side"><a class="custom-nav-side-content" href="Landscape.html">Landscape</a></li>
+          </ul>
+        </li>
+        <li class="custom-navbar-brand-wrapper navbar-center"><a class="custom-navbar-brand" href="Index.html">Thearesa Photography</a></li>
+        <li class="right-nav-wrapper navbar-right">
+          <ul  class="group-nav-wrapper nav navbar-nav">
+            <li class=" custom-nav-side"><a class="custom-nav-side-content" href="AboutMe.html">About</a></li>
+            <li class=" custom-nav-side"><a class="custom-nav-side-content" href="Contact.html">Contact</a></li>
+            <li class=" custom-nav-side"><a class="custom-nav-side-content" href="Login.html" id="login">Login</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="main-content-index">
+    </div>
+  </div>
+
+</body>
+</html>

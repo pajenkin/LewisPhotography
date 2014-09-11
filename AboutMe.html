@@ -13,29 +13,30 @@
   <link rel="stylesheet" href="css/custom.css">
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/index.js"></script>
 </head>
 <body>
-  <div class="container" >
-    <div id="main-container">
-      <nav class="navbar navbar-default">
-        <ul class="nav navbar-nav navbar-left">
-          <li><a class="navbar-brand" href="Index.html">Thearesa Photography</a></li>
-        </ul>
-        <ul class="nav navbar-nav pull-right">
-          <li><a href="Index.html">Home </a></li>
-          <li><a href="Gallery.html">Galleries</a></li>
-          <li><a href="AboutMe.html">About</a></li>
-          <li><a href="Login.html" id="login">Login</a></li>
-        </ul>
-      </nav>
-      <div class="main-content-index">
-        <div class="col-sm-2">
-          This is the left side.
-        </div>
-        <div class="col-sm-10">
-          This is the right Side. Somewhat like a blog.
-        </div>
-      </div>
+  <div class="main-container">
+    <div class="nav-wrapper navbar navbar-default" role="navigation">
+      <ul class="nav-item-wrapper nav navbar-nav">
+        <li class="left-nav-wrapper navbar-left"> 
+          <ul class="group-nav-wrapper nav navbar-nav">
+            <li class=" custom-nav-side"><a class="custom-nav-side-content" href="Gallery.html">Weddings</a></li>
+            <li class=" custom-nav-side"><a class="custom-nav-side-content" href="Portraits.html">Portraits</a></li>
+            <li class=" custom-nav-side"><a class="custom-nav-side-content" href="Landscape.html">Landscape</a></li>
+          </ul>
+        </li>
+        <li class="custom-navbar-brand-wrapper navbar-center"><a class="custom-navbar-brand" href="Index.html">Thearesa Photography</a></li>
+        <li class="right-nav-wrapper navbar-right">
+          <ul  class="group-nav-wrapper nav navbar-nav">
+            <li class=" custom-nav-side"><a class="custom-nav-side-content" href="AboutMe.html">About</a></li>
+            <li class=" custom-nav-side"><a class="custom-nav-side-content" href="Contact.html">Contact</a></li>
+            <li class=" custom-nav-side"><a class="custom-nav-side-content" href="Login.html" id="login">Login</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="main-content-index">
     </div>
   </div>
 
