@@ -109,7 +109,7 @@ a, u {
 	float: left;
 	height: 100%;
 	width: 100%;
-	/*margin-top: 10px;*/
+	margin-top: 10px;
 	position: relative;
 	text-align: center;
 	text-decoration: none;
@@ -132,5 +132,6 @@ a, u {
 	text-align: center;
 	display: inline-block;
 	font-size: 21px;
+	padding: 5px !important;
 }
 
