@@ -4,7 +4,7 @@ $(document).ready(function(){
 	setBackgroundImageRotation();
 });
 
-var imageArr = ['img/DSC00229.JPG', 'img/DSC01106.JPG', 'img/DSC01115.JPG', 'img/18.jpg']
+var imageArr = ['img/lewis_photo_1.JPG', 'img/lewis_photo_3.JPG', 'img/lewis_photo_4.JPG', 'img/lewis_photo_5.jpg']
 var counter = 0;
 var fadeTimer = 1000;
 var duration = 10000;
@@ -26,13 +26,22 @@ function initImages(){
 function setBackgroundImageRotation(){
 	var visibleImage = $(".photo-background-visible");
 	setTimeout(function(){
-		visibleImage.toggleClass('photo-background-visible photo-background-hidden')
 		if(visibleImage.is(":last-child")){
-			$('.first-photo').toggleClass('photo-background-visible photo-background-hidden');
+			visibleImage.fadeOut(function(){
+				$(".first-photo").fadeIn('slow', function(){
+					$(this).toggleClass('photo-background-visible photo-background-hidden');
+					visibleImage.toggleClass('photo-background-visible photo-background-hidden');
+				});
+			});
 		}else{
-			visibleImage.next().toggleClass('photo-background-visible photo-background-hidden')
+			visibleImage.fadeOut(function(){
+				visibleImage.next().fadeIn('slow', function(){
+					$(this).toggleClass('photo-background-visible photo-background-hidden');
+					visibleImage.toggleClass('photo-background-visible photo-background-hidden');
+				});
+			});
 		};
-		console.log("This is the ticker");
+		//console.log("This is the ticker");
 		setBackgroundImageRotation();
 	}, duration);
 };

@@ -5,6 +5,10 @@ body, html{
 	width: 100%;
 }
 
+.pseudo-body{
+	background-color: #93c5f6;
+}
+
 a, u {
 	text-decoration: none;
 }
@@ -33,19 +37,62 @@ a, u {
 
 .photo-background-hidden{
 	display: none;
+
+/*	-webkit-animation-name: fadeOut;
+	-webkit-animation-duration: 1s;
+	animation-name: fadeOut;
+	animation-duration: 1s;*/
 }
 
 .photo-background-visible{
-    -webkit-transition: opacity 2s ease-in ease-out;
-    -moz-transition: opacity 2s ease-in ease-out;
-    -o-transition: opacity 2s ease-in ease-out;
-    -ms-transition: opacity 2s ease-in ease-out;
-    transition: opacity 2s ease-in ease-out;
+	display: block;
+
+/*	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 1s;
+	animation-name: fadeIn;
+	animation-duration: 1s;*/
 }
 
 .background-image-index img{
+	opacity: 1;
 	height: 100%;
 	width: 100%;
+}
+
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+20% { opacity: 0; }
+40% { opacity: 0.3; }
+60% { opacity: 0.5; }
+80% { opacity: 0.9; }
+100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+0% { opacity: 0; }
+20% { opacity: 0; }
+40% { opacity: 0.3; }
+60% { opacity: 0.5; }
+80% { opacity: 0.9; }
+100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeOut{
+100% { opacity: 1; }
+80% { opacity: 0.9; }
+40% { opacity: 0.3; }
+60% { opacity: 0.5; }
+20% { opacity: 0; }
+0% { opacity: 0; }
+}
+
+@keyframes fadeOut {
+100% { opacity: 1; }
+80% { opacity: 0.9; }
+40% { opacity: 0.3; }
+60% { opacity: 0.5; }
+20% { opacity: 0; }
+0% { opacity: 0; }
 }
 
 .main-container{
